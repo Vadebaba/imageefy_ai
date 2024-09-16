@@ -14,9 +14,9 @@ const MobileNav = () => {
 
     return (
         <header className="header flex justify-between p-5 mt-6">
-           {/* <Link href="/" className="flex items-center gap-2 md:py-2">
-                <h1>IMAGEEFY</h1>
-            </Link>*/}
+           {/**/} <Link href="/" className="flex items-center gap-2 md:py-2">
+                <h1>IMAGeEEFY</h1>
+            </Link>
 
             <nav className="flex gap-2">
                 <SignedIn>
