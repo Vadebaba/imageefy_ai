@@ -2,11 +2,11 @@
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { navLinks } from "@/constants"
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
+import { SignedIn, UserButton } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "../ui/button"
+//import { Button } from "../ui/button"
 
 
 const MobileNav = () => {
@@ -14,9 +14,9 @@ const MobileNav = () => {
 
     return (
         <header className="header flex justify-between p-5 mt-6">
-            <Link href="/" className="flex items-center gap-2 md:py-2">
-                <h1>IMAGIFY</h1>
-            </Link>
+           {/* <Link href="/" className="flex items-center gap-2 md:py-2">
+                <h1>IMAGEEFY</h1>
+            </Link>*/}
 
             <nav className="flex gap-2">
                 <SignedIn>
@@ -68,11 +68,12 @@ const MobileNav = () => {
                     </Sheet>
                 </SignedIn>
 
-                <SignedOut>
+               {/* <SignedOut>
                     <Button asChild className="button bg-purple-gradient bg-cover">
                         <Link href="/sign-in">Login</Link>
                     </Button>
-                </SignedOut>
+                </SignedOut>*/}
+
             </nav>
         </header>
     )

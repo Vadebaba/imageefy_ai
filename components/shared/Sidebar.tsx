@@ -15,7 +15,7 @@ const Sidebar = () => {
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
           {/*<Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />*/}
-          <h2 className='font-600 '>IMAGIFY</h2>
+          <h2 className='font-600 '>IMAGEEFY</h2>
            </Link>
 
         <nav className="sidebar-nav">

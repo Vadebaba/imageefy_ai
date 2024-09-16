@@ -1,5 +1,5 @@
 {
-  "name": "imagify_ai_app",
+  "name": "imageefy_ai_app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,10 +18,10 @@
     "lucide-react": "^0.439.0",
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.2",
-    "next": "14.2.8",
+    "next": "^14.2.8",
     "qs": "^6.13.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
