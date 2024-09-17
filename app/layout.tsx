@@ -14,7 +14,7 @@ const IBMPlex = IBM_Plex_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Imageefy_ai_app",
+  title: "Imageefy_ai",
   description: "AI-powered image generator, developed by Adewole Victor.",
 };
 
