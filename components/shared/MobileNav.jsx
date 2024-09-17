@@ -8,31 +8,32 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 //import { Button } from "../ui/button"
 
-
 const MobileNav = () => {
     const pathname = usePathname();
 
     return (
-        <header className="header flex justify-between p-5 mt-6">
-           {/**/} <Link href="/" className="flex items-center gap-2 md:py-2">
-                <h1>IMAGeEEFY</h1>
-            </Link>
+        <>
+            <header className="header flex justify-between p-5 mt-6">
+                <Link href="/" className="flex items-center gap-2 md:py-2 font-bold">
+                    IMAGEEFY
+                </Link>
 
-            <nav className="flex gap-2">
-                <SignedIn>
-                    <UserButton />
+                <nav>
+                    <SignedIn>
+                        <UserButton />
 
-                    <Sheet>
-                        <SheetTrigger>
-                            <Image
-                                src="/assets/icons/menu.svg"
-                                alt="menu"
-                                width={32}
-                                height={32}
-                                className="cursor-pointer"
-                            />
-                        </SheetTrigger>
-                        <SheetContent className="sheet-content sm:w-64">
+                        <Sheet>
+                            <SheetTrigger>
+                                <Image
+                                    src="/assets/icons/menu.svg"
+                                    alt="menu"
+                                    width={32}
+                                    height={32}
+                                    className="cursor-pointer"
+                                />
+                            </SheetTrigger>
+
+                            <SheetContent className="sheet-content sm:w-64">
                             <>
                                 <Image
                                     src="/assets/images/logo-text.svg"
@@ -65,17 +66,12 @@ const MobileNav = () => {
                                 </ul>
                             </>
                         </SheetContent>
-                    </Sheet>
-                </SignedIn>
+                        </Sheet>
+                    </SignedIn>
 
-               {/* <SignedOut>
-                    <Button asChild className="button bg-purple-gradient bg-cover">
-                        <Link href="/sign-in">Login</Link>
-                    </Button>
-                </SignedOut>*/}
-
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </>
     )
 }
 
