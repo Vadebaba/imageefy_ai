@@ -4,16 +4,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className=''>
-     
-
-{/*
-      <SignInButton />
-
-
-      <SignedIn>
-        <UserButton showName />
-      </SignedIn>*/}
+    <div>
+      <p>Home</p>
     </div>
   )
 }
