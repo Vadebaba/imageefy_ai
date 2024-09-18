@@ -18,6 +18,7 @@ export async function createUser(user: CreateUserParams) {
   }
 }
 
+
 // READ
 export async function getUserById(userId: string) {
   try {
@@ -32,6 +33,7 @@ export async function getUserById(userId: string) {
     handleError(error);
   }
 }
+
 
 // UPDATE
 export async function updateUser(clerkId: string, user: UpdateUserParams) {
@@ -49,6 +51,7 @@ export async function updateUser(clerkId: string, user: UpdateUserParams) {
     handleError(error);
   }
 }
+
 
 // DELETE
 export async function deleteUser(clerkId: string) {
@@ -71,6 +74,7 @@ export async function deleteUser(clerkId: string) {
     handleError(error);
   }
 }
+
 
 // USE CREDITS
 export async function updateCredits(userId: string, creditFee: number) {

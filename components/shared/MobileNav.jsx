@@ -13,9 +13,9 @@ const MobileNav = () => {
 
     return (
         <>
-            <header className="header flex justify-between p-5 mt-6">
+            <header className="header flex justify-between p-5 mt-2">
 
-                <Link href="/" className="flex items-center gap-2 md:gap-2 font-bold">
+                <Link href="/" className="flex items-center gap-2 md:py-2 font-bold">
                     IMAGEEFY
                 </Link>
 
