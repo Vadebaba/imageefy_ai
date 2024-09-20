@@ -10,13 +10,14 @@ import { Button } from '../ui/button'
 
 
 const Sidebar = () => {
+
   const pathname = usePathname();
 
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo font-bold">      
-            IMAGEEFY     
+        <Link href="/" className="sidebar-logo font-bold">
+          IMAGEEFY
         </Link>
 
         <nav className="sidebar-nav">
