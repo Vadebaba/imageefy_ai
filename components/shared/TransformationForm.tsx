@@ -25,6 +25,7 @@ export const formSchema = z.object({
   color: z.string().optional(),
   prompt: z.string().optional(),
   publicId: z.string(),
+  username: z.string().optional(), // Add this line
 })
 
 
@@ -58,11 +59,12 @@ const TransformationForm = ({ action, data = null }:
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-     
 
-     <FormField
+
+        <FormField
           control={form.control}
-          name="username"
+           name="username"  
+         // name="title" // Match a field from formSchema
           render={({ field }) => (
             <FormItem>
               <FormLabel>Username</FormLabel>
@@ -77,8 +79,8 @@ const TransformationForm = ({ action, data = null }:
           )}
         />
         <Button type="submit">Submit</Button>
-      
-      
+
+
       </form>
     </Form>
   )
